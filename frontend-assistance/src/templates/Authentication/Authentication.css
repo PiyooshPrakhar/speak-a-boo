@@ -1,0 +1,253 @@
+/**
+ * Created by Muhammed Erdem on 10.10.2017.
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700&subset=latin-ext");
+.auth__wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.auth__wrapper {
+  width: 1%;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Dosis", sans-serif;
+}
+
+.auth__sign-panels {
+  width: 650px;
+  background: #fff;
+  padding: 40px 80px;
+  margin: 40px auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.auth__sign-panels .form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth__sign-panels .form-row input[type="text"],
+.auth__sign-panels .form-row input[type="date"],
+.auth__sign-panels .form-row select {
+  width: 49.5%; /* Adjust width as needed */
+}
+
+.login,
+.signup {
+  position: relative;
+}
+
+.auth__title {
+  color: #343335;
+  opacity: 0.8;
+}
+
+.auth__title span, .auth__title .main__title {
+  display: block;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.auth__title p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-face,
+.btn-twitter {
+  color: #fff;
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 11px 0;
+  font-weight: 500;
+}
+
+.btn-face .fa,
+.btn-twitter .fa {
+  margin-right: 5px;
+}
+
+.btn-face {
+  background: #5397d7;
+  margin-right: 25px;
+}
+
+.btn-twitter {
+  background: #40b9e0;
+}
+
+.or {
+  margin: 35px 0;
+  font-weight: 600;
+  color: #9f9f9f;
+}
+
+.or:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #cecece;
+  position: absolute;
+  margin-top: -10px;
+  z-index: 0;
+}
+
+.or span {
+  display: block;
+  background: #fff;
+  width: 50px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.auth__sign-panels input {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: #ededed;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  color: #7c7c7c;
+  font-weight: 500;
+}
+.auth__sign-panels input:focus::placeholder {
+  color: transparent;
+}
+
+.auth__sign-panels option {
+  background-color: white;
+  
+}
+
+.auth__sign-panels select {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background: #ededed;
+  text-align-last: center; /* Use text-align-last to center text in select */
+  padding: 10px;
+  font-size: 18px;
+  color: #7c7c7c;
+  font-weight: 500;
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For Safari */
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.auth__sign-panels select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.auth__sign-panels input:focus {
+  outline: none;
+}
+
+.btn-signin {
+  display: inline-block;
+  width: 50%;
+  margin-top: 10px;
+  height: 50px;
+  background: #ec581e;
+  border-radius: 50px;
+  padding: 11px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-reset,
+.btn-member,
+.btn-fade {
+  font-size: 19px;
+  font-weight: 500;
+  color: #9f9f9f;
+  display: block;
+  /*width: 210px;*/
+  margin: 30px auto 0;
+  text-decoration: none;
+}
+.btn-member {
+  margin-top: 15px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.btn-reset .fa,
+.btn-member .fa {
+  margin-left: 6px;
+}
+
+.notification p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #9f9f9f;
+}
+
+.notification span {
+  color: #ec581e;
+}
+
+.error {
+  display: block;
+  color: #ec581e;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .auth__sign-panels {
+    width: 90%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .auth__sign-panels {
+    padding: 40px 20px;
+  }
+
+  .btn-face,
+  .btn-twitter {
+    width: 100%;
+  }
+  .btn-face {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-signin {
+    width: 80%;
+  }
+
+  .title span {
+    font-size: 36px;
+  }
+}

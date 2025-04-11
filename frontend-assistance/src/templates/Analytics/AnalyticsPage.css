@@ -1,0 +1,16 @@
+.analytics__container {
+  margin-top: 74px;
+  margin-left: 75px;
+  width: calc(100vw - 90px);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.analytics__chart {
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* .analytics__chart:hover {
+  transform: scale(1.005);
+} */
